@@ -24,6 +24,8 @@ a {
     justify-content: space-between;
     align-items: center;
     height: 70px;
+    width: 1200px;
+    margin: 0 auto;
 }
 
 .navbar-header {
@@ -52,14 +54,16 @@ a {
 
 .container {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
     width: 1200px;
     margin: 30px auto;
 }
 
+/* CSS de las series */
+
 .series {
     display: grid;
-    grid-template-columns: 33% 33% 33% 33%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 10px;
     color: #fff;
 }
@@ -91,3 +95,6 @@ a {
     border-radius: 7px;
 }
 
+.populares {
+    border: 2px red solid;
+}
