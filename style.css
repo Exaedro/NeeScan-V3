@@ -2,6 +2,7 @@
     border: 0;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -51,21 +52,42 @@ a {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 50% 50%;
+    width: 1200px;
+    margin: 30px auto;
 }
 
 .series {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 33% 33% 33% 33%;
+    gap: 10px;
+    color: #fff;
 }
 
-.serie figure {
-    max-width: 250px;
-    min-height: 300px;
-    overflow: hidden;
+.serie {
+    width: 201px;
+    height: 350px;
+    overflow-wrap: break-word;
+}
+
+.serie-img {
+    width: 201px;
+    height: 300px;
+}
+
+.serie-title {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    height: 50px;
 }
 
 .serie img {
     width: 100%;
     height: 100%;
+    object-fit: fill;
+    border-radius: 7px;
 }
+
