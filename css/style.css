@@ -63,11 +63,6 @@ h2 {
 
 /* //////////////////////////////////////////////////////////////////////////////////////////////// */
 
-.wrapper {
-    width: 1200px;
-    margin: 3rem auto 0px auto;
-}
-
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
