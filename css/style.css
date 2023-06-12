@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111;
+    color: #fff;
+    font-family: system-ui;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 32px;
+    text-decoration: underline pink;
+    margin-bottom: 15px;
+}
+
+.centrar {
+    text-align: center;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar-header {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.navbar-body {
+    display: flex;
+    list-style: none;
+    margin-right: 20px;
+}
+
+.navbar-body a {
+    padding: 15px 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 7px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-body a:hover {
+    background-color: rgb(60, 60, 60);
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.wrapper {
+    width: 1200px;
+    margin: 3rem auto 0px auto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 15px;
+    gap: 10px;
+}
+
+.series {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    row-gap: 30px;
+}
+
+.populares {
+    display: flex;
+    flex-direction: column;
+}
+
+.serie {
+    max-width: 201px;
+    max-height: 350px;
+}
+
+.serie figure {
+    width: 201px;
+    height: 300px;
+}
+
+.serie img {
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+}
+
+.serie .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+    height: 50px;
+    overflow: hidden;
+}
+
+.nuevo {
+    position: absolute;
+    margin: 10px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    background-color: rgba(255, 29, 29, 0.74);
+    font-weight: bold;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.populares {
+    height: 730px;
+    overflow: hidden;
+    border-radius: 7px;
+}
+
+.popular {
+    height: 182.5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.popular h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 100;
+}
+
+.popular img {
+    filter: opacity(30%);
+    transition: transform .3s ease;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.popular figure:hover img {
+    transform: scale(1.2);
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+footer {
+    height: 100px;
+    margin: 1.5rem 0px 1.5rem 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
