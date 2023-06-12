@@ -125,6 +125,7 @@ h2 {
     height: 730px;
     overflow: hidden;
     border-radius: 7px;
+    margin: 10px;
 }
 
 .popular {
