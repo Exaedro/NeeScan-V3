@@ -1,23 +1,32 @@
 * {
-    border: 0;
     margin: 0;
     padding: 0;
+    border: 0;
     box-sizing: border-box;
 }
 
 body {
+    background-color: #111;
+    color: #fff;
     font-family: system-ui;
-    background-color: rgb(40, 40, 40);
-}
-
-header {
-    background-color: rgba(20, 20, 20);
 }
 
 a {
-    text-decoration: none;
     color: #fff;
+    text-decoration: none;
 }
+
+h2 {
+    font-size: 32px;
+    text-decoration: underline pink;
+    margin-bottom: 15px;
+}
+
+.centrar {
+    text-align: center;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////// */
 
 .navbar {
     display: flex;
@@ -52,48 +61,57 @@ a {
     background-color: rgb(60, 60, 60);
 }
 
+/* //////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.wrapper {
+    width: 1200px;
+    margin: 5rem auto;
+}
+
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 1200px;
-    gap: 15px;
-    margin: 30px auto;
+    margin: 15px;
+    gap: 10px;
 }
-
-/* CSS de las series */
 
 .series {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 10px;
-    color: #fff;
+    row-gap: 30px;
+}
+
+.populares {
+    display: flex;
+    flex-direction: column;
 }
 
 .serie {
-    width: 201px;
-    height: 350px;
-    overflow-wrap: break-word;
+    max-width: 201px;
+    max-height: 350px;
 }
 
-.serie-img {
+.serie figure {
     width: 201px;
     height: 300px;
-}
-
-.serie-title {
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    text-align: center;
-    font-weight: bold;
-    height: 50px;
 }
 
 .serie img {
     width: 100%;
     height: 100%;
-    object-fit: fill;
     border-radius: 7px;
+}
+
+.serie .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+    height: 50px;
+    overflow: hidden;
 }
 
 .nuevo {
