@@ -171,7 +171,14 @@ footer {
         width: 100%;
     }   
     .series {
-        grid-template-columns: 1fr 1fr;
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+        justify-content: center;
+        align-items: center;
+    }
+    h2 {
+        text-align: center;
     }
     .serie {
         max-width: 265px;
