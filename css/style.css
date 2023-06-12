@@ -63,15 +63,11 @@ h2 {
 
 /* //////////////////////////////////////////////////////////////////////////////////////////////// */
 
-.wrapper {
-    width: 1200px;
-    margin: 3rem auto 0px auto;
-}
-
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 15px;
+    width: 1200px;
+    margin: 15px auto;
     gap: 10px;
 }
 
@@ -166,4 +162,76 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+@media (max-width: 575.98px) {
+    .container, .navbar {
+        width: 100%;
+    }   
+    .series {
+        grid-template-columns: 1fr 1fr;
+    }
+    .serie {
+        max-width: 265px;
+        max-height: 422px;
+    }
+    .series figure {
+        width: 265px;
+        height: 372px;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .container, .navbar {
+        width: 540px;
+        margin: 0 auto;
+    }
+    .series {
+        grid-template-columns: 1fr 1fr;
+    }
+    .serie {
+        max-width: 265px;
+        max-height: 422px;
+    }
+    .series figure {
+        width: 265px;
+        height: 372px;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .container, .navbar {
+        width: 720px;
+    }
+
+    .series {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .container, .navbar {
+        width: 960px;
+    }
+
+    .series {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container, .navbar {
+        width: 1200px;
+    }
 }
