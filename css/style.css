@@ -203,6 +203,63 @@ footer {
 
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
+.slider {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.swiffy-slider {
+    max-width: 820px;
+    height: 300px;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 25px 0px 40px;
+}
+
+.slider-container {
+    overflow: hidden;
+}
+
+.swiffy-slider img {
+    width: 100%;
+    height: 100%;
+}
+
+.swiffy-slider .texto {
+    position: relative;
+    width: 500px;
+}
+
+.swiffy-slider .texto p {
+    position: absolute;
+    margin: 100px 0px 0px 30px;
+    text-shadow: 4px 8px 33px -2px rgba(0,0,0,1);
+    z-index: 100;
+}
+
+.swiffy-slider .texto h3 {
+    position: absolute;
+    font-size: 1.6rem;
+    margin: 30px 0px 10px 30px;
+    text-shadow: 4px 8px 33px -2px rgba(0,0,0,1);
+    z-index: 100;
+}
+
+.swiffy-slider img {
+    opacity: 0.5;
+}
+
+.swiffy-slider ul li:nth-child(1) img {
+    transform: translateY(-150px);
+}
+
+.swiffy-slider ul li:nth-child(3) img {
+    transform: translateY(-150px);
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
 @media (max-width: 575.98px) {
     .container, .navbar, .catalogo-container {
         width: 100%;
