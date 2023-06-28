@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
     <title>Document</title>
   </head>
   <body>
@@ -19,8 +21,46 @@
         </ul>
       </nav>
     </header>
+    <section class="slider">
+      <div class="swiffy-slider slider-nav-autohide slider-nav-autoplay slider-nav-autopause slider-item-snapstart">
+        <ul class="slider-container" style="overflow-x: none;">
+          <a href="pages/mi-vida-de-funcionario-revoluciono-el-mundo.html">
+            <li>
+              <div class="texto">
+                <h3>Mi vida de funcionario revoluciono el mundo</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni natus, obcaecati placeat eaque voluptatibus amet itaque ea aliquid pariatur, sequi, quod rem minima id quae alias voluptatum molestias iusto asperiores.</p>
+              </div>
+              <img src="img/Mi vida de funcionario revoluciono el mundo.webp" alt="Mi vida de funcionario revoluciono el mundo">
+            </li>
+          </a>
+          <a href="pages/existencia.html">
+            <li>
+              <div class="texto">
+                <h3>Existencia</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio perferendis vero eius minus eaque consequuntur dolor rerum, ullam alias doloribus, soluta pariatur veritatis nostrum laudantium! Deleniti eligendi sit illo voluptate?</p>
+              </div>
+              <img src="img/Existencia.webp" alt="Existencia">
+            </li>
+          </a>
+          <a href="pages/el-rey-del-octagono.html">
+            <li>
+              <div class="texto">
+                <h3>El rey del octagono</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis consectetur repellat accusamus voluptatum eos consequuntur quibusdam magni. Eveniet quod adipisci nisi perspiciatis magni laboriosam, libero non cum quaerat illo! Totam!</p>
+              </div>
+              <img src="img/El rey del octagono.webp" alt="El rey del octagono">
+            </li>
+          </a>
+        </ul>
+        <div class="slider-indicators">
+            <button class="active"></button>
+            <button></button>
+            <button></button>
+        </div>
+      </div>
+    </section>
     <main class="container">
-      <div>
+      <section>
         <h2>Series en emision</h2>
         <div class="series">
           <div class="serie">
@@ -88,8 +128,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <div>
+      </section>
+      <section>
         <h2 class="centrar">Populares</h2>
         <div class="populares">
           <a href="pages/estio.html">
@@ -128,7 +168,7 @@
             </div>
           </a>
         </div>
-      </div>
+      </section>
     </main>
     <footer>
       <p>Desarrollado por Exaedro</p>
