@@ -261,7 +261,7 @@ footer {
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 @media (max-width: 575.98px) {
-    .container, .navbar, .catalogo-container {
+    .container, .navbar, .catalogo-container, .slider {
         width: 100%;
     }   
     .series {
@@ -292,7 +292,7 @@ footer {
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) { 
-    .container, .navbar, .catalogo-container {
+    .container, .navbar, .catalogo-container, .slider {
         width: 540px;
         margin: 0 auto;
     }
@@ -317,7 +317,7 @@ footer {
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) { 
-    .container, .navbar, .catalogo-container {
+    .container, .navbar, .catalogo-container, .slider {
         width: 720px;
     }
 
@@ -327,7 +327,7 @@ footer {
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
-    .container, .navbar, .catalogo-container {
+    .container, .navbar, .catalogo-container, .slider {
         width: 960px;
     }
 
@@ -337,6 +337,10 @@ footer {
 
     .catalogo {
         grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .swiffy-slider {
+        max-width: 720px;
     }
 }
 
