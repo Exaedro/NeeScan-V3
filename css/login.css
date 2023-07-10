@@ -6,6 +6,38 @@
 }
 
 body {
-    background-image: url();
+    background-image: url('../img/fondo.jpg');
+    background-repeat: no-repeat;
     background-size: cover;
+    font-family: system-ui;
+}
+
+.container {
+    height: 96vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+    background-color: #2b2b2b;
+    color: #fff;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.container form button {
+    border-radius: 5px;
+    background-color: rgb(18, 214, 11);
+    color: #fff;
+    padding: 10px;
+}
+
+.container form input {
+    border-bottom: 4px;
+    border-bottom-color: rgb(238, 143, 0);
+    background-color: transparent;
 }
