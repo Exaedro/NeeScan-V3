@@ -21,6 +21,19 @@ body {
     filter: brightness(45.66666%)
 }
 
+header {
+    position: absolute;
+    margin: 40px 0px 0px 70px
+}
+
+header a {
+    font-weight: bold;
+    font-size: 22px;
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+}
+
 .container {
     height: 96vh;
     display: flex;
@@ -47,7 +60,7 @@ body {
 
 .container form button {
     border-radius: 5px;
-    background-color: rgb(18, 214, 11);
+    background-color: rgb(228, 114, 0);
     color: #fff;
     padding: 10px;
     height: 45px;
@@ -57,7 +70,7 @@ body {
 }
 
 .container form button:hover {
-    background-color: rgb(15, 159, 10);
+    background-color: rgb(184, 92, 0);
 }
 
 .container form input {
